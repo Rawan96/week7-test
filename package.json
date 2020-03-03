@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "start": "NODE_ENV=production node server/index.js",
+    "dev": "NODE_ENV=development nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   "dependencies": {
     "env2": "^2.2.2",
     "express": "^4.17.1",
-    "pg": "^7.12.1"
+    "pg": "^7.18.2"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
